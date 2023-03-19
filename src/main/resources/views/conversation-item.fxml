@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane onMouseClicked="#openChat" prefHeight="92.0" prefWidth="380.0" styleClass="chatitem" stylesheets="@../css/chat.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.map222.sfmc.socialnetworkfx.controller.ChatitemController">
+   <children>
+      <ImageView fx:id="userView" fitHeight="70.0" fitWidth="70.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/defaultpfp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="114.0" layoutY="11.0" prefHeight="34.0" prefWidth="248.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Futura" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="msgLabel" layoutX="115.0" layoutY="42.0" prefHeight="26.0" prefWidth="247.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Lato Light Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER_RIGHT" layoutX="185.0" layoutY="68.0" prefHeight="18.0" prefWidth="162.0" styleClass="datelabel" stylesheets="@../css/chat.css" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Lato Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

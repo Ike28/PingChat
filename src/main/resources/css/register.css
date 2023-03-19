@@ -1,0 +1,9 @@
+.register-btn {
+	-fx-background-color: #00524A;
+	-fx-background-color: #1c3037;
+	-fx-border-width: 0;
+}
+
+.addimg-btn {
+	-fx-background-color: transparent;
+}

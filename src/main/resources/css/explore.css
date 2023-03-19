@@ -1,0 +1,24 @@
+.reqpage {
+	-fx-background-color: #313766;
+	-fx-border-width: 0;
+}
+
+.addbtn {
+	-fx-background-color: #1d9198;
+	-fx-border-width: 0;
+}
+
+.accbtn {
+	-fx-background-color: #1c3037;
+	-fx-border-width: 0;
+}
+
+.rejbtn {
+	-fx-background-color: #ef0a42;
+	-fx-border-width: 0;
+}
+
+.reqbkg {
+	-fx-background-color: #137367;
+	-fx-background-radius: 30;
+}

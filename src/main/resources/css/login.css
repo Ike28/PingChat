@@ -1,0 +1,26 @@
+.login-anchor {
+	-fx-background-color: #137367;
+}
+
+.split-pane-divider {
+    -fx-padding: 0 0 0 0;
+}
+
+.login-btn {
+	-fx-background-color: #24284c;
+}
+
+.logo-label {
+}
+
+.overhead-text {
+	-fx-background-color: transparent;
+	-fx-text-fill: #00ffb0;
+}
+
+.register-btn {
+	-fx-background-color: transparent;
+	-fx-text-fill: #ffffff;
+    -fx-border-width: 1 1;
+    -fx-border-color: #fff;
+}

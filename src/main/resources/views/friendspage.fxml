@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.map222.sfmc.socialnetworkfx.controller.FriendspageController">
+   <children>
+      <SplitPane dividerPositions="0.25069637883008355" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/launch.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="navbar" stylesheets="@../css/launch.css">
+               <children>
+                  <Label layoutX="140.0" layoutY="19.0" prefHeight="135.0" prefWidth="374.0" text="PingChat" textFill="WHITE">
+                     <font>
+                        <Font name="Futura" size="89.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="101.0" fitWidth="109.0" layoutX="26.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="949.0" layoutY="-1.0" prefHeight="170.0" prefWidth="328.0">
+                     <children>
+                        <Pane prefHeight="170.0" prefWidth="195.0" styleClass="namebar" stylesheets="@../css/launch.css">
+                           <children>
+                              <Label fx:id="firstnameLabel" alignment="CENTER" layoutX="9.0" layoutY="92.0" prefHeight="40.0" prefWidth="147.0" text="Label" textFill="WHITE">
+                                 <font>
+                                    <Font name="Futura" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lastnameLabel" alignment="CENTER" layoutX="9.0" layoutY="131.0" prefHeight="28.0" prefWidth="147.0" text="Label" textFill="WHITE">
+                                 <font>
+                                    <Font name="Futura" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="81.0" fitWidth="81.0" layoutX="41.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/defaultpfp.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="101.0" fitWidth="89.0" layoutX="41.0" layoutY="43.0" onMouseClicked="#disconnectClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/disconnect-button.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="mainsection" stylesheets="@../css/launch.css">
+               <children>
+                  <BorderPane prefHeight="538.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <VBox prefHeight="538.0" prefWidth="137.0" styleClass="edgemenu" stylesheets="@../css/launch.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <Pane prefHeight="23.0" prefWidth="130.0" />
+                              <ImageView fx:id="friendsOption" fitHeight="104.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/friends-button-selected.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="chatOption" fitHeight="104.0" fitWidth="130.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#chatClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/chat-button.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="connectOption" fitHeight="104.0" fitWidth="130.0" layoutX="10.0" layoutY="114.0" onMouseClicked="#addClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/add-button.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="moreOption" fitHeight="104.0" fitWidth="130.0" layoutX="10.0" layoutY="218.0" onMouseClicked="#eventsClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/event-button.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="backOption" fitHeight="104.0" fitWidth="130.0" layoutX="10.0" layoutY="322.0" onMouseClicked="#leaveClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/leave-button.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </left>
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label prefHeight="80.0" prefWidth="782.0" text="  My Pingus" textFill="WHITE">
+                                 <font>
+                                    <Font name="Futura" size="35.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane fx:id="friendsScroll" prefHeight="453.0" prefWidth="782.0">
+                                 <content>
+                                    <GridPane fx:id="friendsGrid" alignment="TOP_CENTER" prefHeight="0.0" prefWidth="32.0" styleClass="grd" stylesheets="@../css/friend.css">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </content>
+                                 <stylesheets>
+                                    <URL value="@../css/friend.css" />
+                                    <URL value="@../css/scroll.css" />
+                                 </stylesheets>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </center>
+                     <right>
+                        <Pane prefHeight="538.0" prefWidth="359.0" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

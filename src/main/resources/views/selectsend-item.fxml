@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="40.0" prefWidth="225.0" styleClass="user-check" stylesheets="@../css/chat.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.map222.sfmc.socialnetworkfx.controller.SendController">
+   <children>
+      <CheckBox fx:id="check" layoutX="16.0" layoutY="4.0" mnemonicParsing="false" onAction="#checkClicked" prefHeight="31.0" prefWidth="197.0" text="CheckBox" textFill="WHITE">
+         <font>
+            <Font name="Futura" size="22.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

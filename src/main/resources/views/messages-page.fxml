@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.map222.sfmc.socialnetworkfx.controller.MessagesController">
+   <children>
+      <SplitPane dividerPositions="0.25069637883008355" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/launch.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="navbar" stylesheets="@../css/launch.css">
+               <children>
+                  <Label layoutX="140.0" layoutY="19.0" prefHeight="135.0" prefWidth="374.0" text="PingChat" textFill="WHITE">
+                     <font>
+                        <Font name="Futura" size="89.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="101.0" fitWidth="109.0" layoutX="26.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="1084.0" layoutY="-1.0" prefHeight="170.0" prefWidth="195.0" styleClass="namebar" stylesheets="@../css/launch.css">
+                     <children>
+                        <Label fx:id="firstnameLabel" alignment="CENTER" layoutX="5.0" layoutY="25.0" prefHeight="66.0" prefWidth="186.0" text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="Futura" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lastnameLabel" alignment="CENTER" layoutX="5.0" layoutY="82.0" prefHeight="66.0" prefWidth="186.0" text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="Futura" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="mainsection" stylesheets="@../css/launch.css">
+               <children>
+                  <Button fx:id="openchatButton" layoutX="956.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#openClicked" prefHeight="54.0" prefWidth="258.0" styleClass="contextbtn" stylesheets="@../css/launch.css" text="OPEN CHAT" textFill="WHITE">
+                     <font>
+                        <Font name="Lato Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="usnField" layoutX="956.0" layoutY="178.0" prefHeight="54.0" prefWidth="258.0" promptText="  TYPE A FRIEND'S USERNAME">
+                     <font>
+                        <Font name="Lato Black" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="956.0" layoutY="115.0" prefHeight="54.0" prefWidth="258.0" text="Open your Ping Chats" textFill="WHITE">
+                     <font>
+                        <Font name="Futura" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

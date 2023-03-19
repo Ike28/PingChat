@@ -1,0 +1,33 @@
+.navbar {
+	-fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 10;
+	-fx-border-color: #00ffb0;
+	-fx-background-color: #137367;
+}
+
+.mainsection {
+	-fx-background-color: #24284c;
+}
+
+.split-pane-divider {
+    -fx-padding: 0 0 0 0;
+}
+
+.namebar {
+	-fx-background-color: #10675C;
+}
+
+.contextbtn {
+	-fx-background-color: #00ffb0;
+	-fx-border-width: 0;
+}
+
+.navbtn {
+	-fx-background-color: #10675C;
+	-fx-border-width: 0;
+}
+
+.edgemenu {
+	-fx-background-color: #24284c;
+	-fx-border-width: 0;
+}

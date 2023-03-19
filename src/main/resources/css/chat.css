@@ -1,0 +1,80 @@
+.chatlist {
+	-fx-background-color: #5e669c;
+	-fx-border-width: 0;
+}
+
+.scroll-pane {
+	-fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+	-fx-background-color: transparent;
+}
+
+.chatitem {
+	-fx-background-color: #313766;
+	-fx-background-radius: 15;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color : #5e669c;
+    -fx-border-color :transparent;
+}
+
+.datelabel {
+	-fx-text-fill: #00ffb0;
+}
+
+.srch {
+	-fx-background-radius: 15;
+	-fx-background-color: #313766;
+	-fx-text-fill: #ffffff;
+}
+
+.theirmsg {
+	-fx-background-color: #24284c;
+}
+
+.theirmsgbubble {
+	-fx-background-radius: 15;
+	-fx-background-color: #5e669c;
+}
+
+.yourmsgbubble {
+	-fx-background-radius: 15;
+	-fx-background-color: #02b77f;
+}
+
+.reply-text {
+	-fx-text-fill: #00ffb0;
+}
+
+.sendarea {
+	-fx-background-radius: 10;
+	-fx-background-color: #02b77f;
+	-fx-text-fill: #ffffff;
+	-fx-control-inner-background: #02b77f;
+	-fx-highlight-text-fill: #ffffff;
+	-fx-highlight-fill: #ffffff;
+}
+
+.text-area	 .content {
+	-fx-background-color: #02b77f;
+}
+
+.user-check {
+	-fx-background-radius: 15;
+	-fx-background-color: #5e669c;
+}
+
+.check-box .box {
+    -fx-background-color: #24284c;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #00ffb0;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #137367;
+}

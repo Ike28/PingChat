@@ -1,0 +1,28 @@
+.bkg {
+	-fx-background-color: #313766;
+	-fx-background-radius: 30;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.scroll-pane .viewport {
+	-fx-background-color: transparent;
+}
+
+.chatbtn {
+	-fx-background-color: #00ffb0;
+	-fx-border-width: 0;
+}
+
+.removebtn {
+	-fx-background-color: #FB0A45;
+	-fx-border-width: 0;
+}
+
+.pfp {
+	-fx-padding: 1;
+	-fx-border-width: 10;
+	-fx-border-color: #00ffb0;
+}

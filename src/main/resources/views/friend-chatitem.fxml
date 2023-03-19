@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="msgContainer" prefHeight="104.0" prefWidth="725.0" styleClass="theirmsg" stylesheets="@../css/chat.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.map222.sfmc.socialnetworkfx.controller.MessageitemController">
+   <children>
+      <Pane fx:id="msgBubble" layoutX="23.0" layoutY="26.0" prefHeight="51.0" prefWidth="355.0" styleClass="theirmsgbubble">
+         <children>
+            <Label fx:id="msgLabel" layoutX="10.0" layoutY="8.0" onMouseClicked="#clearReply" prefHeight="36.0" prefWidth="333.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Lato Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="388.0" layoutY="36.0" onMouseClicked="#replyClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/replythem-button.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dateLabel" layoutX="34.0" layoutY="78.0" prefHeight="23.0" prefWidth="161.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Lato Light Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="replyLabel" layoutX="34.0" layoutY="3.0" prefHeight="17.0" prefWidth="324.0" styleClass="reply-text" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Lato Light Italic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
